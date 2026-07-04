@@ -76,9 +76,9 @@ graph.add_edge('scriptwriter','translator')
 graph.add_edge('translator', END)
 
 #compile graph
-app = graph.compile
+app = graph.compile()
 
-app.invoke({
+result = app.invoke({
     "raw_input": "AI agents are the future of tech. They can think, plan, and act on their own. LangGraph helps you build these agents with proper control and memory."
 })
 
